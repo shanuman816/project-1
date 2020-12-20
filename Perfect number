@@ -1,0 +1,8 @@
+x=int(input("enter a number"))
+count=0
+for i in range(1,x):
+ if(x%i==0):
+ count=count+iif(count==x):
+ print(x,"is perfect")
+else: 
+print(x,"is not perfect")
