@@ -1,0 +1,23 @@
+# Defining the Node class
+class Node: 
+    def __init__(self,data): # Constructor for Node class 
+          self.data = data 
+          self.next = None
+ # Defining the Linked List class
+class LinkedList:
+    def __init__(self): # Constrctor for LinkedList class 
+        self.head = None 
+
+# Method to append data
+    def append(self,data): 
+        new_node = Node(data)
+        # If head is empty
+        if self.head is None:
+           self.head = new_node
+           return
+        # If head is not empty
+        cur = self.head 
+        while cur.next:
+            cur = cur.next
+        cur.next = new_node
+    
